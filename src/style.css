@@ -1,0 +1,64 @@
+body{
+  background-color:#F5F5F5;
+  padding:10px;
+  margin:50px red;
+  font-family:sans-serif;
+}
+#main{
+  
+  text-align:center;
+  background-color:#DCDCDC;
+  padding:10px;
+  margin:0px;
+}
+
+#img-div{
+  max-width:100%;
+  margin:50px;
+  margin-top:0px;
+  padding:100px;
+  background-color:white;
+  display:block;
+  
+}
+#img-div #image{
+  width:100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+/*
+  .responsive {
+  width: 100%;
+  height: auto;
+}*/
+/*markup for the timeline container*/
+ .timelineContainer{
+   width:40%;
+   padding:10px;
+   padding-top:25px;
+   margin:0 auto;
+   font-size: 17px;
+   font-weight:500;
+    box-shadow: inset 0 0 10px #000000;
+   
+}
+.timelineContainer ul{
+
+display:inline-block;
+  text-align:left;
+}
+   .timelineContainer li{
+   
+   list-style-position: inside;
+   margin: 5px;
+  
+}
+   
+   
+footer{
+ font-size: 18px; 
+  
+  
+}

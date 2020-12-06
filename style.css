@@ -1,64 +1,76 @@
 body{
-  background-color:#F5F5F5;
-  padding:10px;
-  margin:50px red;
-  font-family:sans-serif;
-}
-#main{
-  
-  text-align:center;
-  background-color:#DCDCDC;
-  padding:10px;
-  margin:0px;
+  margin: 0;
+  /* background-image: linear-gradient(to right top, #445550, #5e6f6a, #7a8a85, #96a5a1, #b4c2be, #b7c4c0, #b9c7c3, #bcc9c5, #a4b1ad, #8c9995, #75817d, #5f6b67); */
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+ font-family: 'Kelly Slab', cursive;
 }
 
-#img-div{
-  max-width:100%;
-  margin:50px;
-  margin-top:0px;
-  padding:100px;
-  background-color:white;
-  display:block;
-  
-}
-#img-div #image{
-  width:100%;
-  max-width: 100%;
-  display: block;
-  height: auto;
-  text-align: center;
-}
-/*
-  .responsive {
-  width: 100%;
-  height: auto;
-}*/
-/*markup for the timeline container*/
- .timelineContainer{
-   width:40%;
-   padding:10px;
-   padding-top:25px;
-   margin:0 auto;
-   font-size: 17px;
-   font-weight:500;
-    box-shadow: inset 0 0 10px #000000;
-   
-}
-.timelineContainer ul{
 
-display:inline-block;
-  text-align:left;
+.postContainer{
+  display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+  margin: 3em auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-   .timelineContainer li{
-   
-   list-style-position: inside;
-   margin: 5px;
-  
+.post{
+  width: 90%;
+  margin:1em;
+  display: flex;
+  flex-flow: column;
+  justify-content:space-evenly;
+  align-items: center;
+  line-height: 1.9rem;
 }
-   
-   
-footer{
- font-size: 18px; 
-  
-  
+
+.list{
+  background-color: rgba(255, 255, 255, 0.14);
+  background-position: 0rem;
+  box-shadow: 9px 5px 6px;
+  border-radius: 9px;
+}
+
+li{
+  font-size: 1em;
+	max-width: 80%;
+	margin: 1em;
+}
+q{
+  font-size: 1.5rem;
+  margin:1em;
+}
+
+
+  img{
+  width:70%;
+  object-fit: cover;
+  margin:0.75rem;
+  /* order: 0; */
+  /* padding-left: 3em; */
+  box-shadow: 5px 6px 9px;
+}  
+
+@media (min-width:500px){
+  .post{
+    flex-flow: column;
+   justify-content: space-evenly;
+   align-content: center;
+    
+  }
+  #tribute-info{
+    text-align: center;
+  }
+  img{
+    width:100%;
+    object-fit: cover;
+  }
+}
+
+.link:hover{
+  color:blue;
+}
+
+.link.focus{
+  color:green;
 }
